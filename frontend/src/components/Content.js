@@ -46,28 +46,28 @@ const Item6 = styled.div`
 
 const testDaten = [
   {
-    name: "bla1",
-    kurs: "123",
-    lala1: "lala1",
-    lala2: "lala2",
-    lala3: "lala3",
-    lala4: "lala4"
+    name: "adidas",
+    kurs: "166,64",
+    veraenderung: "-1.12%",
+    kgv: "12",
+    nettomarge: "6%",
+    marktkapitalisierung: "30 Mrd. EUR"
   },
   {    
-    name: "bla2",
-    kurs: "1234",
-    lala1: "lala1",
-    lala2: "lala2",
-    lala3: "lala3",
-    lala4: "lala4"
+    name: "airbus",
+    kurs: "166,65",
+    veraenderung: "-1.13%",
+    kgv: "13",
+    nettomarge: "7%",
+    marktkapitalisierung: "40 Mrd. EUR"
   },
   {
-    name: "bla3",
-    kurs: "12356",
-    lala1: "lala1",
-    lala2: "lala2",
-    lala3: "lala3",
-    lala4: "lala4"
+    name: "allianz",
+    kurs: "166,66",
+    veraenderung: "-1.14%",
+    kgv: "14",
+    nettomarge: "8%",
+    marktkapitalisierung: "50 Mrd. EUR"
   }
 ]
 
