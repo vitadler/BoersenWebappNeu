@@ -1,5 +1,4 @@
 import { Box, Grid, Paper } from "@mui/material";
-
 import styled from 'styled-components';
 
 const Item1 = styled.div`
@@ -108,7 +107,7 @@ const TabellenUeberschrift = () => {
   )
 }
 
-const Content = props => {
+const Content = ({sandp}) => {
   return (
     <Box sx={{ flexGrow: 1, margin: 2 }} style={{ outline: "5px dotted green"}}>
       <TabellenUeberschrift />
