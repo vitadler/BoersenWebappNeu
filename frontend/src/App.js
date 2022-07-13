@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import AppContainer from "./styled/AppContainer";
 import axios from "axios";
 
+
 const loadStockData = async () => {
   const options = {
     method: 'GET',
@@ -20,10 +21,16 @@ const loadStockData = async () => {
   }).catch(function (error) {
     console.error(error);
   }); */
- 
-  const response = await axios(options);
-  return response;
-}
+useEffect (() => {
+ let interval = setInterval(() => {
+   const response = await axios(options);
+ }, 5000);
+
+  return () => {
+   clearInterval(interval);
+ };
+ }, []);
+
 
 function App() {
   const [sandp, setSandp] = useState({});

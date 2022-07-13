@@ -111,7 +111,7 @@ const Content = ({sandp}) => {
   return (
     <Box sx={{ flexGrow: 1, margin: 2 }} style={{ outline: "5px dotted green"}}>
       <TabellenUeberschrift />
-      {testDaten.map((e, i) => (
+      {sandp.data.stocks.map((e, i) => (
         <Grid container spacing={1} key={i} >
           <Grid item xs={4} sm={2} md={2} lg={2} xl={2} key={e.name+i.toString()} display={"block"}>
             <Item1>
