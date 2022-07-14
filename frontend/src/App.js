@@ -1,10 +1,8 @@
 import Header from "./components/Header";
 import Content from "./components/Content";
 import Footer from "./components/Footer";
-import { useState, useEffect } from "react";
-import AppContainer from "./styled/AppContainer";
-import axios from "axios";
 
+<<<<<<< HEAD
 
 const loadStockData = async () => {
   const options = {
@@ -31,20 +29,15 @@ useEffect (() => {
  };
  }, []);
 
+=======
+import AppContainer from "./styled/AppContainer";
+>>>>>>> parent of a495530 (Daten anzeigen)
 
 function App() {
-  const [sandp, setSandp] = useState({});
-  
-  useEffect(() => {
-    loadStockData().then(res => {
-      setSandp(res)
-    })
-  })
-
   return (
     <AppContainer>
       <Header caption="Socialcode" />
-      <Content sandp={sandp} />
+      <Content />
       <Footer caption="Socialcode @ Codingschule, 2022" />
     </AppContainer>
   );
