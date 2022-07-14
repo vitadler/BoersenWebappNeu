@@ -44,32 +44,7 @@ const Item6 = styled.div`
   outline: 5px dotted blue;
 `
 
-const testDaten = [
-  {
-    name: "adidas",
-    kurs: "166,64",
-    veraenderung: "-1.12%",
-    kgv: "12",
-    nettomarge: "6%",
-    marktkapitalisierung: "30 Mrd. EUR"
-  },
-  {    
-    name: "airbus",
-    kurs: "166,65",
-    veraenderung: "-1.13%",
-    kgv: "13",
-    nettomarge: "7%",
-    marktkapitalisierung: "40 Mrd. EUR"
-  },
-  {
-    name: "allianz",
-    kurs: "166,66",
-    veraenderung: "-1.14%",
-    kgv: "14",
-    nettomarge: "8%",
-    marktkapitalisierung: "50 Mrd. EUR"
-  }
-]
+
 
 const TabellenUeberschrift = () => {
   return (
@@ -108,11 +83,11 @@ const TabellenUeberschrift = () => {
   )
 }
 
-const Content = props => {
+const Content = ({stockData}) => {
   return (
     <Box sx={{ flexGrow: 1, margin: 2 }} style={{ outline: "5px dotted green"}}>
       <TabellenUeberschrift />
-      {sandp.data.stocks.map((e, i) => (
+      {stockData.map((e, i) => (
         <Grid container spacing={1} key={i} >
           <Grid item xs={4} sm={2} md={2} lg={2} xl={2} key={e.name+i.toString()} display={"block"}>
             <Item1>
