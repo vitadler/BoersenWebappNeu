@@ -2,8 +2,6 @@ import Header from "./components/Header";
 import Content from "./components/Content";
 import Footer from "./components/Footer";
 
-<<<<<<< HEAD
-
 const loadStockData = async () => {
   const options = {
     method: 'GET',
@@ -29,9 +27,7 @@ useEffect (() => {
  };
  }, []);
 
-=======
-import AppContainer from "./styled/AppContainer";
->>>>>>> parent of a495530 (Daten anzeigen)
+
 
 function App() {
   return (
