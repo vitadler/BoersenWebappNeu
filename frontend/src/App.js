@@ -4,6 +4,8 @@ import Footer from "./components/Footer";
 import { useEffect, useState } from "react";
 import AppContainer from "./styled/AppContainer"
 
+//import yahooFinance from "yahoo-finance"
+
 /* const loadStockData = async () => {
   const options = {
     method: 'GET',
