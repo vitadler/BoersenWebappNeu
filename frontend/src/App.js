@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 import { useEffect, useState } from "react";
 import AppContainer from "./styled/AppContainer"
 
-const loadStockData = async () => {
+/* const loadStockData = async () => {
   const options = {
     method: 'GET',
     url: 'https://stock-market-data.p.rapidapi.com/market/index/s-and-p-five-hundred',
@@ -13,9 +13,9 @@ const loadStockData = async () => {
       'X-RapidAPI-Host': 'stock-market-data.p.rapidapi.com'
     }
   };
-}
+} */
 
-const testDaten = [
+/* const testDaten = [
   {
     name: "adidas",
     kurs: "166,64",
@@ -40,11 +40,11 @@ const testDaten = [
     nettomarge: "8%",
     marktkapitalisierung: "50 Mrd. EUR"
   }
-]
+] */
 
 function App() {
 
-  const [stockData, setStockData] = useState(testDaten);
+/*   const [stockData, setStockData] = useState(testDaten);
 
   useEffect (() => {
 /*     let interval = setInterval(() => {
@@ -54,12 +54,12 @@ function App() {
       return () => {
        clearInterval(interval);
     }; */
-  }, []);
+  // }, []); */
 
   return (
     <AppContainer>
       <Header caption="Socialcode" />
-      <Content stockData={stockData} />
+      <Content />
       <Footer caption="Socialcode @ Codingschule, 2022" />
     </AppContainer>
   );
