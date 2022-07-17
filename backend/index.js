@@ -11,11 +11,33 @@ app.get('/', (req, res) => {
   res.status(200).send("OK");
 })
 
+var SYMBOLS = [
+  'AAPL',
+  'GOOG',
+  'MSFT',
+  'IBM',
+  'AMZN',
+  'ORCL',
+  'INTC',
+  'QCOM',
+  'FB',
+  'CSCO',
+  'SAP',
+  'TSM',
+  'BIDU',
+  'EMC',
+  'HPQ',
+  'TXN',
+  'ERIC',
+  'ASML',
+  'CAJ',
+  'YHOO'
+];
+
 app.get('/api/getstockdata', async (req, res) => {
-  yahooFinance.historical({
-    symbol: 'AAPL',
-    from: '2012-01-01',
-    to: '2012-12-31',
+  yahooFinance.quote({
+    symbol: 'AAPL', 
+    modules: [ 'price', 'summaryDetail' ]
   }, function (err, quotes) {
     res.status(200).send(quotes)
     console.log(err, quotes);
